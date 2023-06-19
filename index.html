@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO | Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <nav class="nav container">
+                <h2 class="nav_logo"><a href="#">Barclyas.</a></h2>
+            
+
+            <ul class="menu_items">
+                <img src="/images/times.svg" alt="" id="menu_toggle">
+                <li><a href="#" class="nav_link">Home</a></li>
+                <li><a href="#" class="nav_link">Contact</a></li>
+                <li><a href="#" class="nav_link">Service</a></li>
+                <li><a href="#" class="nav_link">Project</a></li>
+                <li><a href="#" class="nav_link">Contact</a></li>
+            </ul>
+            <img src="/images/bars.svg" alt="" id="menu_toggle">
+        </nav>
+        </header>
+
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="row">
+                <div class="column">
+                    <h2>Top free tool and extension to <br> radiply grow you business</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In magni harum iste officiis eum, distinctio possimus? Voluptatibus consequuntur quaerat porro dolorum provident dolores, hic expedita alias neque velit possimus consectetur, iste, voluptas assumenda sed. Dolorum.</p>
+                    <div class="button">
+                        <button class="btn">Read More</button>
+                        <button class="btn">Contact Us</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+
+
+    <lottie-player src="https://lottie.host/5d7deb4d-2d15-4770-b8ed-1ae836068489/BbnxiBdVIa.json"class="hero_img" speed="1"  loop autoplay></lottie-player>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- end hero section -->
+
+        <script>
+             const header =  document.querySelector('header');
+            const menuToggler =  document.querySelectorAll('#menu_toggle');
+
+            menuToggler.forEach(toggler=>{
+                toggler.addEventListener('click', ()=> header.classList.toggle('showMenu'));
+            })
+        </script>
+    </main>
+</body>
+</html>
